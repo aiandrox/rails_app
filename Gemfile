@@ -49,6 +49,8 @@ group :development do
   # フォーマッター
   gem 'rails_best_practices', '~> 1.20'
   gem 'rubocop', '~> 0.80.1', require: false
+  # foreman
+  gem 'foreman'
 end
 
 group :test do
