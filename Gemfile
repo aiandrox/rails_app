@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # 日本語化
 gem 'enum_help'
 gem 'rails-i18n'
+# seedファイル
+gem 'seed-fu'
