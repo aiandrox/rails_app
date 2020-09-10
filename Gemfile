@@ -67,3 +67,5 @@ gem 'enum_help'
 gem 'rails-i18n'
 # seedファイル
 gem 'seed-fu'
+# slim
+gem 'slim-rails'

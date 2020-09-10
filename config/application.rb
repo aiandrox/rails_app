@@ -17,19 +17,19 @@ module RailsApp
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
 
-    # generateで作成するファイルの制限
     config.generators do |g|
       g.assets false
       g.skip_routes true
       g.helper false
       g.test_framework :rspec,
-                       view_specs: false,
-                       helper_specs: false,
-                       routing_specs: false,
-                       controller_specs: false,
-                       request_specs: true,
-                       fixtures: true
+      view_specs: false,
+      helper_specs: false,
+      routing_specs: false,
+      controller_specs: false,
+      request_specs: true,
+      fixtures: true
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
+      g.template_engine = :slim
     end
   end
 end
