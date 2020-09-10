@@ -1,24 +1,30 @@
-# README
+# rails_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+欲しいgemや設定をしたrailsアプリです。
 
-Things you may want to cover:
+## バージョン
 
-* Ruby version
+Ruby 2.7.1
+Rails 6.0.3.3
+yarn 1.22.5
 
-* System dependencies
+## コマンド
 
-* Configuration
+- 起動
 
-* Database creation
+```
+bundle exec foreman start
+```
 
-* Database initialization
+- データベース
 
-* How to run the test suite
+```
+rails db:setup
+rake db:seed_fu
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+- テスト実行
 
-* Deployment instructions
-
-* ...
+```
+bundle exec rspec
+```
