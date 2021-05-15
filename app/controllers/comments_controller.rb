@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :set_board
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
 
   # GET /comments
@@ -49,6 +50,10 @@ class CommentsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_comment
       @comment = Comment.find(params[:id])
+    end
+
+    def set_board
+      @board = Board.find(params[:board_id])
     end
 
     # Only allow a trusted parameter "white list" through.

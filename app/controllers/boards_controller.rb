@@ -6,10 +6,6 @@ class BoardsController < ApplicationController
     @boards = Board.all
   end
 
-  # GET /boards/1
-  def show
-  end
-
   # GET /boards/new
   def new
     @board = Board.new
@@ -24,7 +20,7 @@ class BoardsController < ApplicationController
     @board = Board.new(board_params)
 
     if @board.save
-      redirect_to @board, notice: 'Board was successfully created.'
+      redirect_to board_comments_path, notice: 'Board was successfully created.'
     else
       render :new
     end
